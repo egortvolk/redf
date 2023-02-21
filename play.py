@@ -192,6 +192,7 @@ while play:
     is_attack = input('Что будешь делать (1-атака/2-отступить/3-подлечить себя/\n 4-пополнить броню/5-улучшить оружие/?- узнать свои характеристики)?')
     is_attack =is_attack.lower()
     if is_attack == '?':
+        print('характеристики', knight.name)
         knight.print_info_hero()
     if is_attack == '5':
         print('Денег',knight.coins)
